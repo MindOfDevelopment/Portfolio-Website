@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Keeping boxes the same size */
+  font-family: Cambria, Georgia, serif;
+}
+
+/* Adding All My Section Tag Fixed Padding */
+section {
+  padding: 80px;
+}
+
+.banner {
+  /* Creating a Banner Area in CSS */
+  position: relative;
+  min-height: 635px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: black;
+  background: url(images/bootcamp.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
+.banner h2 {
+  font-size: 2.5em;
+  color: #a9a9a9;
+  font-weight: 1000;
+  line-height: 1, 5em;
+}
+
+.banner h2 span {
+  /* Targeting my name and surname */
+  font-size: 1.2em;
+  color: azure;
+}
+
+.banner h3 {
+  font-size: 1.5em;
+  color: whitesmoke;
+  font-weight: 1000;
+}
+
+.btn {
+  /* Targeting a button 'About Me' */
+  position: relative;
+  background: #009e66;
+  display: inline-block;
+  color: #000;
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+/* Creating About Layout */
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.heading {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #111;
+}
+.heading p {
+  font-style: italic;
+  font-size: 14px;
+}
+.heading h2 {
+  font-size: 3em;
+  color: #009e66;
+}
+.contentBx {
+  padding-left: 40px;
+  text-align: justify;
+}
+.contentBx h2 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.proPic {
+  width: 300px;
+  height: 350px;
+  border-top-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+}
+.heading.bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Creating a Top Navigation */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: blue;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+header ul {
+  position: relative;
+  display: flex;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  display: inline-block;
+  margin: 0 15px;
+  color: green;
+  text-decoration: none;
+}
+/* Creating Projects Layout in CSS */
+.work .content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.work .content .workBx {
+  width: 500px;
+  padding: 20px;
+}
+.work .content .workBx img {
+  max-width: 100%;
+}
+
+footer.copyright {
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Making Total Website Responsive in CSS */
+.content {
+  flex-direction: column;
+}
+
+.content .w50 img {
+  display: block;
+  margin: 0 auto 30px auto;
+}

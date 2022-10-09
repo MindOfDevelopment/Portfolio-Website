@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive PortFolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Creating a Top Navigation -->
+      <a href="#" class="logo">Portfolio</a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="menu">
+        <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </header>
+
+    <!-- Creating Banner Layout in HTML -->
+    <section class="banner" id="home">
+      <div class="textBx">
+        <h2>
+          Hello, I'm<br />
+          <span>Mindaugas Narusevicius</span>
+        </h2>
+        <h3>I'm a Student in Full Stack Web Development.</h3>
+        <a href="#about" class="btn">About Me</a>
+      </div>
+    </section>
+
+    <!-- Creating About Me Layout in HTML -->
+    <section class="about" id="about">
+      <div class="heading">
+        <p>Get to Know me</p>
+        <h2>About Me</h2>
+      </div>
+      <div class="content">
+        <div>
+          <img src="images/bootcamp.jpg" alt="My Photo" class="proPic" />
+        </div>
+        <div class="contentBx">
+          <h3>Who am i?</h3>
+          <h2>
+            I'm <b>Mindaugas Narusevicius</b>, a student at Birmingham
+            University Bootcamp.
+          </h2>
+          <p>I working hard towards completion of my ongoing projects.</p>
+          <br />
+          <p>
+            Here, I will showcase my projects, that I will create while Course
+            progresses.
+          </p>
+          <div class="heading bottom">
+            <a href="images/resume.docx" class="btn">Download CV</a>
+            <div class="bt">
+              <b>Name:</b> Mindaugas Narusevicius<br />
+              <b>Age:</b> 42
+            </div>
+            <div class="bt">
+              <b>Email:</b> Mind.Narusevicius@proton.me<br />
+              <b>Location:</b> United Kingdom
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Creating Projects Layout in HTML -->
+    <section class="work" id="work">
+      <div class="heading">
+        <h2>My Projects</h2>
+        <p>
+          Showcasing my first work -
+          <b>University Birmingham Bootcamp Project</b>
+        </p>
+        <div class="content">
+          <div class="workBx">
+            <a href="#" target="_blank">
+              <img src="images/bootcamp.jpg" alt="First Project" />
+              <p>My Portfolio Website</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Creating Footer Layout in HTML -->
+    <footer class="copyright">
+      <p>&copy; 2020, Mywebsite.com</p>
+    </footer>
+  </body>
+</html>
